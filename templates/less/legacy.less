@@ -1,0 +1,1599 @@
+/*--------------------------------------------------------------
+Hello, this is the BuddyPress Legacy stylesheet.
+
+----------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Navigation
+    1.1 - Pagination
+2.0 - WordPress
+    2.1 - Images
+3.0 - BuddyPress
+    3.1 - Activity
+        3.1.1 - Activity Listing
+        3.1.2 - Activity Comments
+    3.2 - Toolbar
+    3.3 - Directories - Members, Groups, Blogs, Forums
+    3.4 - Error / Success Messages
+    3.5 - Forms
+    3.6 - Ajax Loading
+    3.7 - Topics and Tables - Forums and General
+    3.8 - Headers, Lists and Tabs - Activity, Groups, Blogs, Forums
+    3.9 - Private Messaging Threads
+    3.10 - Extended Profiles
+    3.11 - Widgets
+4.0 - Media Queries
+    4.1 - Smartphones Landscape
+    4.2 - Smartphones Portrait
+    4.3 - Smartphones - smaller screen sizes
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1 - Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.1 - Pagination
+--------------------------------------------------------------*/
+div.pagination {
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 90%;
+    margin: 0;
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+}
+div.pagination .pag-count {
+    float: left;
+    margin-left: 10px;
+}
+div.pagination .pagination-links {
+    float: right;
+    margin-right: 10px;
+}
+div.pagination .pagination-links span,
+div.pagination .pagination-links a {
+    font-size: 90%;
+    padding: 0 5px;
+}
+div.pagination .pagination-links a:hover {
+    font-weight: bold;
+}
+noscript div.pagination {
+    margin-bottom: 15px;
+}
+#nav-above {
+    display: none;
+}
+.paged #nav-above {
+    display: block;
+}
+/*--------------------------------------------------------------
+2 - WordPress
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.1 - Images
+--------------------------------------------------------------*/
+img.wp-smiley {
+    border: none !important;
+    clear: none !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*--------------------------------------------------------------
+3.0 - BuddyPress
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.1 - Activity
+--------------------------------------------------------------*/
+#activity-stream {
+    margin-top: -5px;
+}
+
+#activity-stream p {
+    margin: 5px 0;
+}
+
+#item-body form#whats-new-form {
+    margin: 0;
+    padding: 0;
+}
+.home-page form#whats-new-form {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+form#whats-new-form #whats-new-avatar {
+    float: left;
+}
+form#whats-new-form #whats-new-content {
+    margin-left: 55px;
+    padding: 0 0 20px 20px;
+}
+form#whats-new-form p.activity-greeting {
+    line-height: 0.5em;
+    margin-bottom: 15px;
+    margin-left: 75px;
+}
+form#whats-new-form textarea {
+    background: #fff;
+    color: #555;
+    font-family: inherit;
+    font-size: 90%;
+    height: 20px;
+    padding: 6px;
+    width: 98%;
+}
+body.no-js form#whats-new-form textarea {
+    height: 50px;
+}
+form#whats-new-form #whats-new-options select {
+    max-width: 200px;
+    margin-top: 12px;
+}
+form#whats-new-form #whats-new-submit {
+    float: right;
+    margin-top: 12px;
+}
+#whats-new-options {
+    overflow: auto;
+    height: 0;
+}
+body.no-js #whats-new-options {
+    height: auto;
+}
+#whats-new:focus {
+    border-color: rgba(31, 179, 221, 0.9) !important;
+    outline-color: rgba(31, 179, 221, 0.9);
+}
+
+/*--------------------------------------------------------------
+3.1.1 - Activity Listing
+--------------------------------------------------------------*/
+ul.activity-list li {
+    overflow: hidden;
+    padding: 15px 0 0;
+    list-style: none;
+}
+.activity-list .activity-avatar {
+    float: left;
+}
+ul.item-list.activity-list li.has-comments {
+    padding-bottom: 15px;
+}
+body.activity-permalink ul.activity-list li.has-comments {
+    padding-bottom: 0;
+}
+.activity-list li.mini {
+    font-size: 80%;
+    position: relative;
+}
+.activity-list li.mini .activity-avatar img.avatar,
+.activity-list li.mini .activity-avatar img.FB_profile_pic {
+    height: 20px;
+    margin-left: 30px;
+    width: 20px;
+}
+.activity-permalink .activity-list li.mini .activity-avatar img.avatar,
+.activity-permalink .activity-list li.mini .activity-avatar img.FB_profile_pic {
+    height: auto;
+    margin-left: 0;
+    width: auto;
+}
+body.activity-permalink .activity-list > li:first-child {
+    padding-top: 0;
+}
+.activity-list li .activity-content {
+    position: relative;
+}
+.activity-list li.mini .activity-content p {
+    margin: 0;
+}
+.activity-list li.mini .activity-comments {
+    clear: both;
+    font-size: 120%;
+}
+body.activity-permalink li.mini .activity-meta {
+    margin-top: 4px;
+}
+.activity-list li .activity-inreplyto {
+    color: #888;
+    font-size: 80%;
+}
+.activity-list li .activity-inreplyto > p {
+    margin: 0;
+    display: inline;
+}
+.activity-list li .activity-inreplyto blockquote,
+.activity-list li .activity-inreplyto div.activity-inner {
+    background: none;
+    border: none;
+    display: inline;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.activity-list .activity-content {
+    margin: 0 0 0 70px;
+}
+body.activity-permalink .activity-list li .activity-content {
+    border: none;
+    font-size: 100%;
+    line-height: 150%;
+    margin-left: 170px;
+    margin-right: 0;
+    padding: 0;
+}
+body.activity-permalink .activity-list li .activity-header > p {
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+.activity-list .activity-content .activity-header,
+.activity-list .activity-content .comment-header {
+    color: #888;
+    line-height: 220%;
+}
+.activity-header {
+    margin-right: 20px;
+}
+.activity-header a,
+.comment-meta a,
+.acomment-meta a {
+    text-decoration: none;
+}
+.activity-list .activity-content .activity-header img.avatar {
+    float: none !important;
+    margin: 0 5px -8px 0 !important;
+}
+a.bp-secondary-action,
+span.highlight {
+    font-size: 80%;
+    padding: 0;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.activity-list .activity-content .activity-inner,
+.activity-list .activity-content blockquote {
+    margin: 10px 10px 5px 0;
+    overflow: hidden;
+}
+.activity-list li.new_forum_post .activity-content .activity-inner,
+.activity-list li.new_forum_topic .activity-content .activity-inner {
+    border-left: 2px solid #EAEAEA;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+body.activity-permalink .activity-content .activity-inner,
+body.activity-permalink .activity-content blockquote {
+    margin-left: 0;
+    margin-top: 5px;
+}
+.activity-inner > p {
+    word-wrap: break-word;
+}
+.activity-inner > .activity-inner {
+    margin: 0;
+}
+.activity-inner > blockquote {
+    margin: 0;
+}
+.activity-list .activity-content img.thumbnail {
+    border: 2px solid #eee;
+    float: left;
+    margin: 0 10px 5px 0;
+}
+.activity-read-more {
+    margin-left: 1em;
+    white-space: nowrap;
+}
+.activity-list li.load-more {
+    background: #f0f0f0;
+    font-size: 110%;
+    margin: 15px 0;
+    padding: 10px 15px;
+    text-align: center;
+}
+.activity-list li.load-more a {
+    color: #4D4D4D;
+}
+
+
+/*--------------------------------------------------------------
+3.1.2 - Activity Comments
+--------------------------------------------------------------*/
+div.activity-meta {
+    margin: 18px 0 0;
+}
+body.activity-permalink div.activity-meta {
+    margin-bottom: 6px;
+}
+div.activity-meta a {
+    padding: 4px 8px;
+}
+a.activity-time-since {
+    color: #aaa;
+    text-decoration: none;
+}
+a.activity-time-since:hover {
+    color: #888;
+    text-decoration: underline;
+}
+a.bp-primary-action,
+#reply-title small a {
+    font-size: 80%;
+    margin-right: 5px;
+    text-decoration: none;
+}
+a.bp-primary-action span,
+#reply-title small a span {
+    background: #999;
+    color: #fff;
+    font-size: 90%;
+    margin-left: 2px;
+    padding: 0 5px;
+}
+a.bp-primary-action:hover span,
+#reply-title small a:hover span {
+    background: #555;
+    color: #fff;
+}
+div.activity-comments {
+    margin: 0 0 0 70px;
+    overflow: hidden; /* IE fix */
+    position: relative;
+    width: auto;
+    clear: both;
+}
+body.activity-permalink div.activity-comments {
+    background: none;
+    margin-left: 170px;
+    width: auto;
+}
+div.activity-comments > ul {
+    padding: 0 0 0 10px;
+}
+div.activity-comments ul,
+div.activity-comments ul li {
+    border: none;
+    list-style: none;
+}
+div.activity-comments ul {
+    clear: both;
+    margin: 0;
+}
+div.activity-comments ul li {
+    border-top: 1px solid #eee;
+    padding: 10px 0 0;
+}
+body.activity-permalink .activity-list li.mini .activity-comments {
+    clear: none;
+    margin-top: 0;
+}
+body.activity-permalink div.activity-comments ul li {
+    border-width: 1px;
+    padding: 10px 0 0 0;
+}
+div.activity-comments > ul > li:first-child {
+    border-top: none;
+}
+div.activity-comments ul li:last-child {
+    margin-bottom: 0;
+}
+div.activity-comments ul li > ul {
+    margin-left: 30px;
+    margin-top: 0;
+    padding-left: 10px;
+}
+body.activity-permalink div.activity-comments ul li > ul {
+    margin-top: 10px;
+}
+body.activity-permalink div.activity-comments > ul {
+    padding: 0 10px 0 15px;
+}
+div.activity-comments div.acomment-avatar img {
+    border-width: 1px;
+    float: left;
+    height: 25px;
+    margin-right: 10px;
+    width: 25px;
+}
+div.activity-comments div.acomment-content {
+    font-size: 80%;
+    margin: 5px 0 0 40px;
+}
+div.acomment-content .time-since,
+div.acomment-content .activity-delete-link,
+div.acomment-content .comment-header {
+    display: none;
+}
+body.activity-permalink div.activity-comments div.acomment-content {
+    font-size: 90%;
+}
+div.activity-comments div.acomment-meta {
+    color: #888;
+    font-size: 80%;
+}
+div.activity-comments form.ac-form {
+    display: none;
+    padding: 10px;
+}
+div.activity-comments li form.ac-form {
+    margin-right: 15px;
+    clear: both;
+}
+div.activity-comments form.root {
+    margin-left: 0;
+}
+div.activity-comments div#message {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+div.activity-comments form .ac-textarea {
+    background: #fff;
+    border: 1px inset #ccc;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+div.activity-comments form textarea {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    color: #555;
+    font-family: inherit;
+    font-size: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+div.activity-comments form input {
+    margin-top: 5px;
+}
+div.activity-comments form div.ac-reply-avatar {
+    float: left;
+}
+div.ac-reply-avatar img {
+    border: 1px solid #eee;
+}
+div.activity-comments form div.ac-reply-content {
+    color: #888;
+    margin-left: 50px;
+    padding-left: 15px;
+}
+div.activity-comments form div.ac-reply-content a {
+    text-decoration: none;
+}
+.acomment-options {
+    float: left;
+    margin: 5px 0 5px 40px;
+}
+.acomment-options a {
+    color: #999;
+}
+.acomment-options a:hover {
+    color: inherit;
+}
+
+/*--------------------------------------------------------------
+3.3 - Directories - Members, Groups, Blogs, Forums
+--------------------------------------------------------------*/
+div.dir-search {
+    float: right;
+    margin: -39px 0 0 0;
+}
+div.dir-search input[type=text] {
+    font-size: 90%;
+    padding: 1px 3px;
+}
+
+.dir-form {
+    clear: both;
+}
+
+/*--------------------------------------------------------------
+3.4 - Errors / Success Messages
+--------------------------------------------------------------*/
+div#message {
+    margin: 0 0 15px;
+}
+#message.info {
+    margin-bottom: 0;
+}
+div#message.updated {
+    clear: both;
+}
+div#message p,
+#sitewide-notice p {
+    font-size: 90%;
+    display: block;
+    padding: 10px 15px;
+}
+div#message.error p {
+    background-color: #fdc;
+    border: 1px solid #a00;
+    clear: left;
+    color: #800;
+}
+div#message.updated p {
+    background-color: #efc;
+    border: 1px solid #591;
+    color: #250;
+}
+.standard-form#signup_form div div.error {
+    background: #faa;
+    color: #a00;
+    margin: 0 0 10px 0;
+    padding: 6px;
+    width: 90%;
+}
+div.accept,
+div.reject {
+    float: left;
+    margin-left: 10px;
+}
+ul.button-nav li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+}
+ul.button-nav li.current a {
+    font-weight: bold;
+}
+#sitewide-notice #message {
+    left: 2%;
+    position: fixed;
+    top: 1em;
+    width: 96%;
+    z-index: 9999;
+}
+#sitewide-notice.admin-bar-on #message {
+    top: 3.3em;
+}
+#sitewide-notice strong {
+    display: block;
+    margin-bottom: -1em;
+}
+
+/*--------------------------------------------------------------
+3.5 - Forms
+--------------------------------------------------------------*/
+.standard-form textarea,
+.standard-form input[type=text],
+.standard-form input[type=text],
+.standard-form input[type=color],
+.standard-form input[type=date],
+.standard-form input[type=datetime],
+.standard-form input[type=datetime-local],
+.standard-form input[type=email],
+.standard-form input[type=month],
+.standard-form input[type=number],
+.standard-form input[type=range],
+.standard-form input[type=search],
+.standard-form input[type=tel],
+.standard-form input[type=time],
+.standard-form input[type=url],
+.standard-form input[type=week],
+.standard-form select,
+.standard-form input[type=password],
+.dir-search input[type=search],
+.dir-search input[type=text] {
+    border: 1px solid #ccc;
+    background: #fafafa;
+    border-radius: 0;
+    color: #888;
+    font: inherit;
+    font-size: 100%;
+    padding: 6px;
+}
+.standard-form select {
+    padding: 3px;
+}
+.standard-form input[type=password] {
+    margin-bottom: 5px;
+}
+.standard-form label,
+.standard-form span.label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+}
+.standard-form div.checkbox label,
+.standard-form div.radio label {
+    color: #888;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+}
+.standard-form#sidebar-login-form label {
+    margin-top: 5px;
+}
+.standard-form input[type=text] {
+    width: 75%;
+}
+.standard-form#sidebar-login-form input[type=text],
+.standard-form#sidebar-login-form input[type=password] {
+    padding: 4px;
+    width: 95%;
+}
+.standard-form #basic-details-section input[type=password],
+.standard-form #blog-details-section input#signup_blog_url {
+    width: 35%;
+}
+.standard-form#signup_form input[type=text],
+.standard-form#signup_form textarea,
+.form-allowed-tags,
+#commentform input[type=text],
+#commentform textarea {
+    width: 90%;
+}
+.standard-form#signup_form div.submit {
+    float: right;
+}
+div#signup-avatar img {
+    margin: 0 15px 10px 0;
+}
+.standard-form textarea {
+    width: 75%;
+    height: 120px;
+}
+.standard-form textarea#message_content {
+    height: 200px;
+}
+.standard-form#send-reply textarea {
+    width: 97.5%;
+}
+.standard-form p.description {
+    color: #888;
+    font-size: 80%;
+    margin: 5px 0;
+}
+.standard-form div.submit {
+    clear: both;
+    padding: 15px 0 0 0;
+}
+.standard-form p.submit {
+    margin-bottom: 0;
+    padding: 15px 0 0 0;
+}
+.standard-form div.submit input {
+    margin-right: 15px;
+}
+.standard-form div.radio ul {
+    margin: 10px 0 15px 38px;
+    list-style: disc;
+}
+.standard-form div.radio ul li {
+    margin-bottom: 5px;
+}
+.standard-form a.clear-value {
+    display: block;
+    margin-top: 5px;
+    outline: none;
+}
+.standard-form #basic-details-section,
+.standard-form #blog-details-section,
+.standard-form #profile-details-section {
+    float: left;
+    width: 48%;
+}
+.standard-form #profile-details-section {
+    float: right;
+}
+.standard-form #blog-details-section {
+    clear: left;
+}
+.standard-form input:focus,
+.standard-form textarea:focus,
+.standard-form select:focus {
+    background: #fafafa;
+    color: #555;
+}
+form#send-invite-form {
+    margin-top: 20px;
+}
+div#invite-list {
+    background: #f5f5f5;
+    height: 400px;
+    margin: 0 0 10px;
+    overflow: auto;
+    padding: 5px;
+    width: 160px;
+}
+button,
+a.button,
+input[type=submit],
+input[type=button],
+input[type=reset],
+ul.button-nav li a,
+div.generic-button a,
+.comment-reply-link,
+a.bp-title-button {
+    background: #fff; /* Old browsers */
+    border: 1px solid #ccc;
+    color: #777;
+    font-size: .8rem;
+    cursor: pointer;
+    outline: none;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+button:hover,
+a.button:hover,
+a.button:focus,
+input[type=submit]:hover,
+input[type=button]:hover,
+input[type=reset]:hover,
+ul.button-nav li a:hover,
+ul.button-nav li.current a,
+div.generic-button a:hover,
+.comment-reply-link:hover {
+    background: #ededed;
+    border: 1px solid #bbb;
+    color: #555;
+    outline: none;
+    text-decoration: none;
+}
+
+form.standard-form .left-menu {
+    float: left;
+}
+
+form.standard-form .left-menu #invite-list ul{
+    margin:1%;
+    list-style: none;
+}
+
+form.standard-form .left-menu #invite-list ul li {
+    margin:0 0 0 1%;
+}
+
+form.standard-form .main-column {
+    margin-left: 190px;
+}
+
+form.standard-form .main-column ul#friend-list {
+    clear:none;
+}
+
+form.standard-form .main-column ul#friend-list h4 {
+    clear:none;
+}
+
+/* Overrides for embedded WP editors */
+.wp-editor-wrap a.button,
+.wp-editor-wrap button,
+.wp-editor-wrap input[type=submit],
+.wp-editor-wrap input[type=button],
+.wp-editor-wrap input[type=reset] {
+    padding: 0 10px 1px;
+}
+/*--------------------------------------------------------------
+3.6 - Ajax Loading
+--------------------------------------------------------------*/
+a.loading,
+input.loading {
+    -webkit-animation: loader-pulsate .5s infinite ease-in-out alternate;
+    -moz-animation: loader-pulsate .5s infinite ease-in-out alternate;
+    border-color: #aaa;
+}
+@-webkit-keyframes loader-pulsate {
+    from {
+        border-color: #aaa;
+        -webkit-box-shadow: 0 0 6px #ccc;
+        box-shadow: 0 0 6px #ccc;
+    }
+    to {
+        border-color: #ccc;
+        -webkit-box-shadow: 0 0 6px #f8f8f8;
+        box-shadow: 0 0 6px #f8f8f8;
+    }
+}
+@-moz-keyframes loader-pulsate {
+    from {
+        border-color: #aaa;
+        -moz-box-shadow: 0 0 6px #ccc;
+        box-shadow: 0 0 6px #ccc;
+    }
+    to {
+        border-color: #ccc;
+        -moz-box-shadow: 0 0 6px #f8f8f8;
+        box-shadow: 0 0 6px #f8f8f8;
+    }
+}
+
+a.loading:hover,
+input.loading:hover {
+    color: #777;
+}
+input[type="submit"].pending,
+input[type="button"].pending,
+input[type="reset"].pending,
+input[type="submit"].disabled,
+input[type="button"].disabled,
+input[type="reset"].disabled,
+button.pending,
+button.disabled,
+div.pending a,
+a.disabled {
+    border-color: #eee;
+    color: #bbb;
+    cursor: default;
+}
+input[type="submit"]:hover.pending,
+input[type="button"]:hover.pending,
+input[type="reset"]:hover.pending,
+input[type="submit"]:hover.disabled,
+input[type="button"]:hover.disabled,
+input[type="reset"]:hover.disabled,
+button.pending:hover,
+button.disabled:hover,
+div.pending a:hover,
+a.disabled:hover {
+    border-color: #eee;
+    color: #bbb;
+}
+
+/*--------------------------------------------------------------
+3.7 - Forums, Tables and Topics
+--------------------------------------------------------------*/
+ul#topic-post-list {
+    margin: 0;
+    width: auto;
+}
+ul#topic-post-list li {
+    padding: 15px;
+    position: relative;
+}
+ul#topic-post-list li.alt {
+    background: #f5f5f5;
+}
+ul#topic-post-list li div.poster-meta {
+    color: #888;
+    margin-bottom: 10px;
+}
+ul#topic-post-list li div.post-content {
+    margin-left: 54px;
+}
+div.topic-tags {
+    font-size: 80%;
+}
+div.admin-links {
+    color: #888;
+    font-size: 80%;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+div#topic-meta {
+    margin: 0;
+    padding: 5px 19px 30px;
+    position: relative;
+}
+div#topic-meta div.admin-links {
+    right: 19px;
+    top: -36px;
+}
+div#topic-meta h3 {
+    margin: 5px 0;
+}
+div#new-topic-post {
+    display: none;
+    margin: 20px 0 0 0;
+    padding: 1px 0 0 0;
+}
+table.notifications,
+table.notifications-settings,
+table.profile-fields,
+table.wp-profile-fields,
+table.messages-notices,
+table.forum {
+    width: 100%;
+}
+table.notifications thead tr,
+table.notifications-settings thead tr,
+table.profile-fields thead tr,
+table.wp-profile-fields thead tr,
+table.messages-notices thead tr,
+table.forum thead tr {
+    background: #eaeaea;
+}
+table#message-threads {
+    clear: both;
+    margin: 0;
+    width: auto;
+}
+table.profile-fields {
+    margin-bottom: 20px;
+}
+table.profile-fields:last-child {
+    margin-bottom: 0;
+}
+table.profile-fields p {
+    margin: 0;
+}
+table.profile-fields p:last-child {
+    margin-top: 0;
+}
+table.notifications tr td,
+table.notifications-settings tr td,
+table.profile-fields tr td,
+table.wp-profile-fields tr td,
+table.messages-notices tr td,
+table.forum tr td,
+table.notifications tr th,
+table.notifications-settings tr th,
+table.profile-fields tr th,
+table.wp-profile-fields tr th,
+table.messages-notices tr th,
+table.forum tr th {
+    padding: 8px;
+    vertical-align: middle;
+}
+table.notifications tr td.label,
+table.notifications-settings tr td.label,
+table.profile-fields tr td.label,
+table.wp-profile-fields tr td.label,
+table.messages-notices tr td.label,
+table.forum tr td.label {
+    border-right: 1px solid #eaeaea;
+    font-weight: bold;
+    width: 25%;
+}
+table tr td.thread-info p {
+    margin: 0;
+}
+table tr td.thread-info p.thread-excerpt {
+    color: #888;
+    font-size: 80%;
+    margin-top: 3px;
+}
+table.forum td {
+    text-align: center;
+}
+table.notifications tr.alt td,
+table.notifications-settings tr.alt td,
+table.profile-fields tr.alt td,
+table.wp-profile-fields tr.alt td,
+table.messages-notices tr.alt td,
+table.forum tr.alt td {
+    background: #f5f5f5;
+}
+table.notification-settings {
+    margin-bottom: 20px;
+    text-align: left;
+}
+#groups-notification-settings {
+    margin-bottom: 0;
+}
+table.notifications th.icon,
+table.notifications td:first-child,
+table.notification-settings th.icon,
+table.notification-settings td:first-child {
+    display: none;
+}
+table.notification-settings th.title {
+    width: 80%;
+}
+table.notification-settings .yes,
+table.notification-settings .no {
+    text-align: center;
+    width: 40px;
+}
+table.forum {
+    margin: 0;
+    width: auto;
+    clear: both;
+}
+table.forum tr.sticky td {
+    font-size: 110%;
+    background: #fff9db;
+    border-top: 1px solid #ffe8c4;
+    border-bottom: 1px solid #ffe8c4;
+}
+table.forum tr.closed td.td-title {
+    padding-left: 35px;
+}
+table.forum td p.topic-text {
+    color: #888;
+    font-size: 100%;
+}
+table.forum tr > td:first-child,
+table.forum tr > th:first-child {
+    padding-left: 15px;
+}
+table.forum tr > td:last-child,
+table.forum tr > th:last-child {
+    padding-right: 15px;
+}
+table.forum tr th#th-title,
+table.forum tr th#th-poster,
+table.forum tr th#th-group,
+table.forum td.td-poster,
+table.forum td.td-group,
+table.forum td.td-title {
+    text-align: left;
+}
+table.forum tr td.td-title a.topic-title {
+    font-size: 110%;
+}
+table.forum td.td-freshness {
+    white-space: nowrap;
+}
+table.forum td.td-freshness span.time-since {
+    font-size: 80%;
+    color: #888;
+}
+table.forum td img.avatar {
+    float: none;
+    margin: 0 5px -8px 0;
+}
+table.forum td.td-poster,
+table.forum td.td-group {
+    min-width: 140px;
+}
+table.forum th#th-title {
+    width: 80%;
+}
+table.forum th#th-freshness {
+    width: 25%;
+}
+table.forum th#th-postcount {
+    width: 15%;
+}
+table.forum p.topic-meta {
+    font-size: 80%;
+    margin: 5px 0 0 0;
+}
+
+/*-------------------------------------------------------------------------
+3.8 - Headers, Lists and Tabs - Activity, Groups, Blogs, Forums, Profiles
+-------------------------------------------------------------------------*/
+.item-body {
+    margin: 20px 0;
+}
+span.activity {
+    display: inline-block;
+    font-size: 80%;
+    opacity: 0.8;
+    padding: 0;
+}
+span.user-nicename {
+    color: #777;
+    display: inline-block;
+    font-size: 120%;
+    font-weight: bold;
+}
+div#message p,
+#sitewide-notice p {
+    font-weight: normal;
+    margin-top: 3px;
+    text-decoration: none;
+    background-color: #ffd;
+    border: 1px solid #cb2;
+    color: #440;
+    
+}
+div#item-header {
+    overflow: hidden;
+}
+div#item-header div#item-header-content {
+    float: left;
+    margin-left: 0;
+}
+div#item-header h2 {
+    line-height: 120%;
+    margin: 0 0 15px 0;
+}
+div#item-header h2 a {
+    color: #777;
+    text-decoration: none;
+}
+div#item-header img.avatar {
+    float: left;
+    margin: 0 15px 19px 0;
+}
+div#item-header h2 {
+    margin-bottom: 5px;
+}
+div#item-header h2 span.highlight {
+    font-size: 60%;
+    font-weight: normal;
+    line-height: 170%;
+    vertical-align: middle;
+    display: inline-block;
+}
+div#item-header h2 span.highlight span {
+    background: #a1dcfa;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 80%;
+    margin-bottom: 2px;
+    padding: 1px 4px;
+    position: relative;
+    right: -2px;
+    top: -2px;
+    vertical-align: middle;
+}
+div#item-header div#item-meta {
+    font-size: 80%;
+    color: #aaa;
+    overflow: hidden;
+    margin: 15px 0 5px 0;
+    padding-bottom: 10px;
+}
+div#item-header div#item-actions {
+    float: right;
+    margin: 0 0 15px 15px;
+    text-align: right;
+    width: 20%;
+}
+div#item-header div#item-actions h3 {
+    margin: 0 0 5px 0;
+}
+div#item-header ul {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+div#item-header ul h5,
+div#item-header ul span,
+div#item-header ul hr {
+    display: none;
+}
+div#item-header ul li {
+    float: right;
+    list-style: none;
+}
+div#item-header ul img.avatar,
+div#item-header ul.avatars img.avatar {
+    height: 30px;
+    margin: 2px;
+    width: 30px;
+}
+div#item-header div.generic-button,
+div#item-header a.button {
+    float: left;
+    margin: 10px 10px 0 0;
+}
+div#item-header div#message.info {
+    line-height: 80%;
+}
+ul.item-list {
+    border-top: 1px solid #eaeaea;
+    width: 100%;
+    list-style: none;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+body.activity-permalink ul.item-list,
+body.activity-permalink ul.item-list li.activity-item {
+    border: none;
+}
+ul.item-list li {
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0;
+    margin: 0;
+    position: relative;
+    list-style: none;
+}
+ul.single-line li {
+    border: none;
+}
+ul.item-list li img.avatar {
+    float: left;
+    margin: 0 10px 0 0;
+}
+ul.item-list li div.item-title,
+ul.item-list li h4 {
+    font-weight: normal;
+    font-size: 90%;
+    margin: 0;
+    width: 75%;
+}
+ul.item-list li div.item-title span {
+    color: #999;
+    font-size: 80%;
+}
+ul.item-list li div.item-desc {
+    color: #888;
+    font-size: 80%;
+    margin: 10px 0 0 60px;
+    width: 50%;
+}
+ul.item-list li div.action {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    text-align: right;
+}
+ul.item-list li div.meta {
+    color: #888;
+    font-size: 80%;
+    margin-top: 10px;
+}
+ul.item-list li h5 span.small {
+    float: right;
+    font-size: 80%;
+    font-weight: normal;
+}
+div.item-list-tabs {
+    background: transparent;
+    clear: left;
+    overflow: hidden;
+}
+
+div.item-list-tabs ul {
+    margin: 0;
+    padding: 0;
+}
+div.item-list-tabs ul li {
+    float: left;
+    margin: 0;
+    list-style: none;
+}
+div.item-list-tabs#subnav ul li {
+    margin-top: 0;
+}
+div.item-list-tabs ul li.last {
+    float: right;
+    margin: 7px 0 0;
+}
+div.item-list-tabs#subnav ul li.last {
+    margin-top: 4px;
+}
+div.item-list-tabs ul li.last select {
+    max-width: 175px;
+}
+div.item-list-tabs ul li a,
+div.item-list-tabs ul li span {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+div.item-list-tabs ul li a span {
+    background: #eee;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    color: #999;
+    display: inline;
+    font-size: 70%;
+    margin-left: 2px;
+    padding: 3px 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+div.item-list-tabs ul li.selected a,
+div.item-list-tabs ul li.current a {
+    background-color: #eee;
+    color: #555;
+    opacity: .8;
+    font-weight: bold;
+}
+div.item-list-tabs ul li.selected a span,
+div.item-list-tabs ul li.current a span,
+div.item-list-tabs ul li a:hover span {
+    background-color: #eee;
+}
+div.item-list-tabs ul li.selected a span,
+div.item-list-tabs ul li.current a span {
+    background-color: #fff;
+}
+div#item-nav ul li.loading a {
+    background-position: 88% 50%;
+}
+div.item-list-tabs#object-nav {
+    margin-top: 0;
+}
+div.item-list-tabs#subnav {
+    background: transparent;
+    margin: 10px 0 10px;
+    overflow: hidden;
+}
+#admins-list li,
+#mods-list li,
+#members-list li {
+    overflow: auto;
+    list-style: none;
+}
+
+
+/*--------------------------------------------------------------
+3.9 - Private Messaging Threads
+--------------------------------------------------------------*/
+table#message-threads tr.unread td {
+    background: #fff9db;
+    border-top: 1px solid #ffe8c4;
+    border-bottom: 1px solid #ffe8c4;
+    font-weight: bold;
+}
+li span.unread-count,
+tr.unread span.unread-count {
+    background: #dd0000;
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 8px;
+}
+div.item-list-tabs ul li a span.unread-count {
+    padding: 1px 6px;
+    color: #fff;
+}
+div.messages-options-nav {
+    background: #eee;
+    font-size: 80%;
+    margin: 0;
+    padding: 5px 15px;
+    text-align: right;
+}
+div#message-thread div.message-box {
+    margin: 0;
+    padding: 15px;
+}
+div#message-thread div.alt {
+    background: #f4f4f4;
+}
+div#message-thread p#message-recipients {
+    margin: 10px 0 20px 0;
+}
+div#message-thread img.avatar {
+    float: left;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+div#message-thread strong {
+    font-size: 100%;
+    margin: 0;
+}
+div#message-thread strong a {
+    text-decoration: none;
+}
+div#message-thread strong span.activity {
+    margin-top: 4px;
+}
+div#message-thread div.message-metadata {
+    overflow: hidden;
+}
+div#message-thread div.message-content {
+    margin-left: 45px;
+}
+div#message-thread div.message-options {
+    text-align: right;
+}
+#message-threads img.avatar {
+    max-width: none;
+}
+div.message-search {
+    float: right;
+    margin: 0 20px;
+}
+
+/*--------------------------------------------------------------
+3.10 - Extended Profiles
+--------------------------------------------------------------*/
+
+div.profile h4 {
+    margin-bottom: auto;
+    margin-top: 15px;
+}
+#profile-edit-form ul.button-nav {
+    margin-top: 15px;
+}
+body.no-js .field-visibility-settings-toggle,
+body.no-js .field-visibility-settings-close {
+    display: none;
+}
+.field-visibility-settings {
+    display: none;
+    margin-top: 10px;
+}
+    body.no-js .field-visibility-settings {
+        display: block;
+    }
+.current-visibility-level {
+    font-weight: bold;
+    font-style: normal;
+}
+.field-visibility-settings,
+.field-visibility-settings-toggle,
+.field-visibility-settings-notoggle {
+    color: #888;
+}
+.field-visibility-settings-toggle a,
+.field-visibility-settings a {
+    font-size: 80%;
+}
+body.register div.page ul {
+    list-style: none;
+}
+.standard-form .field-visibility-settings label {
+    margin: 0;
+    font-weight: normal;
+}
+.field-visibility-settings legend,
+.field-visibility-settings-toggle {
+    font-style: italic;
+}
+
+/*--------------------------------------------------------------
+3.11 - Widgets
+--------------------------------------------------------------*/
+
+.widget.buddypress div.item-avatar img.avatar {
+    float: left;
+    margin: 0 10px 15px 0;
+}
+
+.widget.buddypress span.activity {
+    display: inline-block;
+    font-size: 80%;
+    opacity: 0.8;
+    padding: 0;
+}
+
+.widget.buddypress div.item-options {
+    font-size: 90%;
+    margin: 0 0 1em 0;
+    padding: 1em 0;
+}
+
+.widget.buddypress div.item{
+    margin:0 0 1em 0;
+}
+
+.widget.buddypress div.item-meta,
+.widget.buddypress div.item-content {
+    font-size: 11px;
+    margin-left: 38px;
+}
+
+.widget.buddypress ul.item-list img.avatar {
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
+}
+.widget.buddypress div.item-avatar img {
+    height: 40px;
+    margin: 1px;
+    width: 40px;
+}
+
+.widget.buddypress div.avatar-block{
+    overflow: hidden;
+}
+
+.widget.buddypress #bp-login-widget-form label {
+    display: block;
+    margin: 1rem 0 .5rem;
+}
+
+.widget.buddypress #bp-login-widget-form #bp-login-widget-submit {
+    margin-right: 10px;
+}
+
+.widget.buddypress .bp-login-widget-user-avatar {
+    float: left;
+    width: 60px;
+}
+
+.widget.buddypress .bp-login-widget-user-links > div {
+    padding-left: 60px;
+}
+
+.widget.buddypress .bp-login-widget-user-links > div {
+    margin-bottom: .5rem;
+}
+
+.widget.buddypress .bp-login-widget-user-links > div.bp-login-widget-user-link a {
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+4.0 - Media Queries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+4.1 - Smartphones - landscape
+--------------------------------------------------------------*/
+@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+    -webkit-text-size-adjust: none;
+}
+@media only screen and (max-width: 480px ){
+    div.dir-search {
+        float: right;
+        margin-top: -50px;
+        text-align: right;
+    }
+    div.dir-search input[type="text"] {
+        margin-bottom: 1em;
+        width: 50%;
+    }
+    a.bp-title-button {
+        margin-left: 10px;
+    }
+    form.standard-form .main-column div.action{
+        position: relative;
+        margin-bottom:1em;
+    }
+    form.standard-form .main-column ul#friend-list h4{
+        width:100%;
+    }
+}
+
+/*--------------------------------------------------------------
+4.2 - Smartphones - portrait
+--------------------------------------------------------------*/
+@media only screen and (max-width: 320px) {
+    div.dir-search {
+        clear: left;
+        float: left;
+        margin-top: 0;
+        text-align: left;
+    }
+    li#groups-order-select {
+        clear: left;
+        float: left;
+    }
+    ul.item-list li div.action {
+        clear: left;
+        float: left;
+        margin-top: 0;
+        margin-left: 70px;
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: left;
+    }
+    ul.item-list li div.item-desc {
+        clear: left;
+        float: left;
+        margin: 10px 0 0;
+        width: auto;
+    }
+    li div.item {
+        margin-left: 70px;
+        width: auto;
+    }
+    ul.item-list li div.meta {
+        margin-top: 0;
+    }
+    .item-desc p {
+        margin: 0 0 10px;
+    }
+    div.pagination .pag-count {
+        margin-left: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+4.2 - Smartphones - smaller screen sizes
+--------------------------------------------------------------*/
+@media only screen and (max-width: 240px) {
+    div.dir-search {
+        float: left;
+        margin: 0;
+    }
+    div.dir-search input[type="text"] {
+        width: 50%;
+    }
+    li#groups-order-select {
+        float: left;
+    }
+    ul.item-list li img.avatar {
+        width: 30px;
+        height: auto;
+    }
+    ul.item-list li div.action,
+    li div.item{
+        margin-left: 45px;
+    }
+    h1 a.bp-title-button {
+        clear: left;
+        float: left;
+        margin: 10px 0 20px;
+    }
+}

@@ -1,0 +1,96 @@
+  
+   div.vertical-list-tabs {
+    margin-left: 0;
+    margin-right: 0;
+    .sidebar-nav {
+      margin-top: -@bp-global-margin;
+    }
+    ul li {
+      float: none;
+      margin:@bp-vert-tabs-margin;
+      padding: @bp-vert-tabs-padding;
+      border-bottom: 0;
+      border-top: 0;
+
+      &.selected, &.current {   
+        a {
+          background: @bp-brand-secondary;
+          color: @bp-white;
+          text-shadow: 0px 1px 0px darken(@bp-brand-secondary, 10%) ;
+          padding: @bp-vert-tabs-padding;
+          opacity: 1 !important;
+          border-top: 1px solid lighten(@bp-brand-secondary, 2%);
+          border-bottom: 2px solid @bp-brand-secondary;
+        }  
+      }
+      a:hover {
+         border-bottom: 2px solid @bp-brand-secondary;
+      }
+
+      // Activity Stream Tabs
+      &.loading{
+          opacity: 0.7;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -ms-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+      }
+      // Activity Stream Tabs
+      &.loading a {
+          background: @bp-brand-secondary;
+          color: @bp-white;
+          text-shadow: 0px 1px 0px darken(@bp-brand-secondary, 10%) ;
+          padding-left: @bp-global-padding !important;
+          padding-right: @bp-global-padding !important;
+          opacity: 0.7;
+      }
+      &.loading a:before {
+        content: "\f110" !important; 
+        padding:0;-webkit-animation:spin 2s infinite linear;-moz-animation:spin 2s infinite linear;-o-animation:spin 2s infinite linear;animation:spin 2s infinite linear}@-moz-keyframes spin{0%{-moz-transform:rotate(0deg)}100%{-moz-transform:rotate(359deg)}}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg)}}@-o-keyframes spin{0%{-o-transform:rotate(0deg)}100%{-o-transform:rotate(359deg)}}@-ms-keyframes spin{0%{-ms-transform:rotate(0deg)}100%{-ms-transform:rotate(359deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}
+      }
+
+      .profile-subnav { 
+        li.current a,
+        li a:hover {
+          background: darken(@bp-brand-secondary, 5%) ;
+          font-weight: bold;
+          border-bottom: 1px solid @bp-brand-secondary;
+          color: @bp-brand-complimentary !important;
+        }
+        li a {
+          background: lighten(@bp-brand-secondary, 5%) ;
+          border-top: 1px solid lighten(@bp-brand-secondary, 9%) ; 
+          border-bottom: 1px solid darken(@bp-brand-secondary, 1%);
+          font-weight: normal;
+          font-size: 90%;
+          padding: 12px @bp-global-padding !important;
+        }  
+      }
+      li:last-child a {
+        border-bottom: 2px solid darken(@bp-brand-secondary, 5%);
+      }
+      a {
+        background: @bp-widget-bg;
+        margin-left: -@bp-global-margin;
+        margin-right: -@bp-global-margin;    
+        padding: @bp-half-padding @bp-global-padding !important;
+        border-bottom: 1px solid darken(@bp-widget-bg, 3%);
+        border-top: 1px solid lighten(@bp-widget-bg, 1%);
+        color: darken(@bp-widget-bg, 40%);
+        text-shadow: 0px -1px 0px darken(@bp-widget-bg, 1%) ;
+      }
+      a:hover {
+          background: @bp-brand-secondary;
+          color: @bp-white;
+          text-shadow: 0px 1px 0px darken(@bp-brand-secondary, 10%) ;
+          padding-left: @bp-global-padding !important;
+          padding-right: @bp-global-padding !important;
+
+          span {
+            background: darken(@bp-brand-secondary, 8%);
+            border: 1px solid darken(@bp-brand-secondary, 5%)  ;
+          }
+        } 
+    }
+  }

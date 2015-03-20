@@ -1,0 +1,76 @@
+div.message-search {
+    float: right;
+    margin: 0 20px;
+}
+#message-threads {
+    img.avatar {
+        max-width: none;
+    }
+}
+div.messages-options-nav {
+    background: #eee;
+    font-size: 80%;
+    margin: 0;
+    padding: 5px 15px;
+    text-align: right;
+}
+table#message-threads {
+    tr.unread {
+        td {
+            background: @bp-white;
+            border-top: 1px solid #ffe8c4;
+            border-bottom: 1px solid #ffe8c4;
+            font-weight: bold;
+        }
+    }
+}
+div#message-thread {
+    div.message-content {
+        margin-left: 45px;
+    }
+    strong {
+        font-size: 100%;
+        margin: 0;
+        span.activity {
+            margin-top: 4px;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+    div.alt {
+        background: #f4f4f4;
+    }
+    div.message-options {
+        text-align: right;
+    }
+    img.avatar {
+        float: left;
+        margin: 0 10px 0 0;
+        vertical-align: middle;
+    }
+    div.message-metadata {
+        overflow: hidden;
+    }
+    div.message-box {
+        margin: 0;
+        padding: 15px;
+    }
+    p#message-recipients {
+        margin: 10px 0 20px 0;
+    }
+}
+div.item-list-tabs ul li a span.unread-count {
+    padding: 1px 6px;
+    color: @bp-white;
+}
+li span.unread-count,tr.unread span.unread-count {
+    background: #dd0000;
+    color: @bp-white;
+    font-weight: bold;
+    padding: 2px 8px;
+}
+.thread-excerpt {
+    font-size: 90%;
+    color: @bp-gray-light;
+}

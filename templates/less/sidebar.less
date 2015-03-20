@@ -1,0 +1,33 @@
+.sidebar {
+    #profile-quick-menu {
+        margin-bottom: -@bp-global-margin;
+        padding: 0;
+        position: relative;
+        top: -@bp-global-margin;
+
+        .dropdown-menu {
+                margin-top: 10px;
+                padding: 10px;
+        }
+
+        .btn.dropdown-toggle {
+            background: none repeat scroll 0 0 rgba(16, 15, 15, 0.83);
+            border: 0 none;
+            font-size: 85%;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            position: relative;
+            top: 10px;
+
+            &:before {
+                //content: "\f075";
+            }
+        }
+    }
+
+
+    #item-buttons {
+        margin: @bp-global-margin -@bp-global-margin -@bp-global-margin;
+        text-align: center;
+    }
+}

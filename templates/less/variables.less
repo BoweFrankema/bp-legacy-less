@@ -1,0 +1,174 @@
+ // Change these to quickly adapt BuddyLess to your existing padding/marging css
+
+//Global Padding & Margin
+@bp-global-padding: 				30
+px;
+@bp-global-margin: 					30px;
+@bp-half-padding: 					15px;
+@bp-half-margin: 					15px;
+
+//Typography
+@bp-font-weight: 					normal;
+@bp-header-font-weight: 			500;
+@bp-header-color: 					@bp-font-color;
+
+//Global Colors
+@bp-font-color: 					#545454;
+@bp-white: 							#FFF;
+@bp-brand-primary: 					#428bca;
+@bp-brand-secondary: 				#343434;
+@bp-brand-complimentary: 			#e99f4c;
+
+
+@bp-gray-darker:            		lighten(@bp-font-color, 5%); // #222
+@bp-gray-dark:              		lighten(@bp-font-color, 15%);   // #333
+@bp-gray:                   		lighten(@bp-font-color, 26%); // #555
+@bp-gray-light:             		lighten(@bp-font-color, 35%);   // #999
+@bp-gray-lighter:           		lighten(@bp-font-color, 60%); // #eee
+
+//Buttons
+@bp-btn-font-weight:                bold;
+@bp-btn-padding: 					8px 10px;
+@bp-btn-size: 						100%;
+@bp-btn-small-size: 				80%;
+
+@bp-btn-default-color:              @bp-font-color;
+@bp-btn-default-bg:                 @bp-white;
+@bp-btn-default-border:             1px solid darken(@bp-btn-default-bg, 4%);
+
+@bp-btn-primary-color:              #fff;
+@bp-btn-primary-bg:                 @bp-brand-primary;
+@bp-btn-primary-border:             darken(@bp-btn-primary-bg, 5%);
+@bp-btn-radius: 					4px;
+
+//Alerts
+@bp-alert-success-bg: 				#efc;
+@bp-alert-success-color: 			#250;
+
+@bp-alert-error-bg: 				#faa;
+@bp-alert-error-color: 				darken(@bp-alert-error-bg, 30%);
+
+@bp-alert-message-bg: 				#fdc;
+@bp-alert-message-color: 			darken(@bp-alert-message-bg, 30%);
+
+@bp-alert-font-weight: 				normal;
+
+//Avatars
+@bp-big-avatar-size: 				inherit;
+@bp-big-avatar-radius: 				4px 4px 0 0;
+@bp-big-avatar-border: 				0;
+@bp-big-avatar-padding: 			0;
+@bp-big-avatar-bg: 					none;
+@bp-big-avatar-shadow: 				none;
+
+@bp-medium-avatar-size: 			40px;
+@bp-medium-avatar-radius: 			50%;
+@bp-medium-avatar-border: 			1px solid @bp-brand-complimentary;
+@bp-medium-avatar-padding: 			2px;
+@bp-medium-avatar-bg:       		@bp-white;
+@bp-medium-avatar-shadow: 			none;
+
+@bp-small-avatar-size: 				20px;
+@bp-small-avatar-radius: 			50%;
+@bp-small-avatar-border: 			0;
+@bp-small-avatar-padding: 			0;
+@bp-small-avatar-bg: 				none;
+@bp-small-avatar-shadow: 			none;
+
+//Forms
+@bp-form-bg: 						@bp-white;
+@bp-form-color: 					@bp-font-color;
+@bp-form-padding: 					3px 8px;
+@bp-form-margin: 					0;
+@bp-form-radius: 					2px;
+@bp-form-shadow: 					none;
+@bp-form-font-size: 				90%;
+@bp-form-font-weight: 				400;
+@bp-form-font-family: 				inherit;
+@bp-form-border: 					1px inset darken(@bp-form-bg, 5%);
+@bp-form-focus: 					@bp-white;
+
+@bp-form-label-color: 				@bp-font-color;
+@bp-form-label-font-weight: 		@bp-font-weight;
+@bp-form-label-font-size: 			90%;
+@bp-form-label-transform:           none;
+@bp-form-label-margin: 				15px 0 5px 0;
+
+
+@bp-widget-bg:         				#f9f9f9;
+
+//Icons
+@bp-icon-font-family: 				"FontAwesome";
+@bp-icon-size: 						inherit;
+@bp-icon-color: 					inherit;
+@bp-icon-padding-right: 			7px;
+@bp-icon-shadow: 					none;
+
+// Listings
+@bp-listing-bg: 					@bp-white;
+@bp-listing-margin: 				0 -@bp-global-margin;
+@bp-listing-padding: 				@bp-global-padding;
+@bp-listing-border-bottom: 			1px solid darken(@bp-listing-bg, 2%);
+@bp-listing-border-top: 			1px solid darken(@bp-listing-bg, 1%);
+@bp-listing-box-shadow: 			none;
+
+// Listings
+@bp-listing-widget-bg: 				@bp-white;
+@bp-listing-widget-margin: 			0 -@bp-global-margin;
+@bp-listing-widget-padding: 		@bp-global-padding;
+@bp-listing-widget-border-bottom: 	1px solid darken(@bp-listing-bg, 2%);
+@bp-listing-widget-border-top: 		1px solid darken(@bp-listing-bg, 1%);
+@bp-listing-widget-box-shadow: 		none;
+
+
+// Item List Tabs
+@bp-item-tabs-wrap-bg: 				@bp-white;
+@bp-item-tabs-wrap-border-top: 		0;
+@bp-item-tabs-wrap-border-bottom: 	0;
+
+@bp-item-tabs-bg: 					darken(@bp-item-tabs-wrap-bg, 2%)	;
+@bp-item-tabs-hover-bg:        		darken(@bp-item-tabs-wrap-bg, 10%);
+@bp-item-tabs-border-width:  		0px;
+@bp-item-tabs-border-color:  		darken(@bp-item-tabs-wrap-bg, 6%);
+
+@bp-item-tabs-color:         		@bp-font-color;
+@bp-item-tabs-hover-color:   		@bp-brand-primary;
+
+@bp-item-tabs-active-bg:  			@bp-item-tabs-hover-bg;
+@bp-item-tabs-active-color:  		@bp-gray-lighter;
+@bp-item-tabs-active-font-weight:  	inherit;
+@bp-item-tabs-border-radius:   		6px;
+@bp-item-tabs-margin: 				0 -@bp-global-margin @bp-global-margin -@bp-global-margin;
+@bp-item-tabs-padding: 				10px 12px;
+
+// Sub Item Tabs
+@bp-sub-item-tabs-bg: 				@bp-white;
+@bp-sub-item-tabs-hover-bg:    		@bp-brand-primary;
+@bp-sub-item-tabs-border-width: 	1px;
+@bp-sub-item-tabs-border-color:		@bp-gray-lighter;
+@bp-sub-item-tabs-color:       		@bp-gray-lighter;
+@bp-sub-item-tabs-active-color:		@bp-gray-lighter;
+@bp-sub-item-tabs-hover-color: 		@bp-brand-secondary;
+@bp-sub-item-tabs-border-radius: 	6px;
+
+
+// Vertical List Tabs
+@bp-vert-tabs-bg: 					@bp-white;
+@bp-vert-tabs-hover-bg:    			@bp-brand-primary;
+@bp-vert-tabs-margin: 				0 -@bp-global-margin;
+@bp-vert-tabs-padding: 				0 @bp-global-padding;
+@bp-vert-tabs-border-bottom: 		1px solid darken(@bp-vert-tabs-bg, 3%);
+@bp-vert-tabs-border-top: 			1px solid darken(@bp-vert-tabs-bg, 1%);
+@bp-vert-tabs-box-shadow: 			none;
+
+
+// Sidebar Headers
+
+@header-avatar-bg : 				@bp-brand-primary;
+@header-border-radius: 				inherit;
+
+//Activity Component
+
+//Groups Component
+
+//Members Component

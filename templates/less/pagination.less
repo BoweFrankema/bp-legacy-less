@@ -1,0 +1,46 @@
+noscript {
+    div.pagination {
+        margin-bottom: 15px;
+    }
+}
+div.pagination {
+    background: transparent;
+    border: none;
+    color: @bp-gray-light;
+
+    font-size: 90%;
+    margin: 0;
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    .pag-count {
+        float: left;
+        margin-left: 10px;
+    }
+    .pagination-links {
+        float: right;
+        margin-right: 10px;
+        a:hover {
+            font-weight: bold;
+        }
+    }
+}
+.messages div.pagination {
+    float: none;
+    display: inline-block;
+}
+
+#nav-above {
+    display: none;
+}
+div.pagination .pagination-links span,div.pagination .pagination-links a {
+    font-size: 90%;
+    padding: 0 5px;
+}
+.paged {
+    #nav-above {
+        display: block;
+    }
+}

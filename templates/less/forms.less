@@ -1,0 +1,200 @@
+// Variables
+
+// @bp-form-bg
+// @bp-form-color
+// @bp-form-padding
+// @bp-form-margin
+// @bp-form-radius
+// @bp-form-shadow
+// @bp-form-font-size
+// @bp-form-font-weight
+// @bp-form-font-family
+// @bp-form-border
+// @bp-form-focus
+
+//
+// @bp-form-label-color
+// @bp-form-label-font-weight
+// @bp-form-label-font-size
+// @bp-form-label-transform
+// @bp-form-label-margin
+
+.standard-form textarea,.standard-form input[type=text],.standard-form input[type=color],.standard-form input[type=date],.standard-form input[type=datetime],.standard-form input[type=datetime-local],.standard-form input[type=email],.standard-form input[type=month],.standard-form input[type=number],.standard-form input[type=range],.standard-form input[type=search],.standard-form input[type=tel],.standard-form input[type=time],.standard-form input[type=url],.standard-form input[type=week],.standard-form select,.standard-form input[type=password],.dir-search input[type=search].dir-search input[type=text], #whats-new {
+    background: @bp-form-bg;
+    border: @bp-form-border;
+    border-radius: @bp-form-radius;
+    color: @bp-form-color;
+    font: @bp-form-font-family;
+    font-size: @bp-form-font-size;
+    padding: @bp-form-padding;
+    margin: @bp-form-margin;
+}
+.standard-form {
+    select {
+        padding: 3px;
+    }
+    input[type=password] {
+        margin-bottom: 5px;
+    }
+    input[type=text] {
+        width: 75%;
+    }
+    textarea {
+        width: 75%;
+        height: 120px;
+    }
+    textarea#message_content {
+        height: 200px;
+    }
+    p.description {
+        color: #888;
+        font-size: 11px;
+        margin: 5px 0;
+    }
+    div.submit {
+        clear: both;
+        padding: 15px 0 0 0;
+        input {
+            margin-right: 15px;
+        }
+    }
+    p.submit {
+        margin-bottom: 0;
+        padding: 15px 0 0 0;
+    }
+    div.radio {
+        ul {
+            margin: 10px 0 15px 38px;
+            list-style: disc;
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    a.clear-value {
+        display: block;
+        margin-top: 5px;
+        outline: none;
+    }
+    #profile-details-section {
+        float: right;
+    }
+    #blog-details-section {
+        clear: left;
+    }
+}
+.standard-form label,.standard-form span.label {
+    display: block;
+    font-weight: @bp-form-label-font-weight;
+    margin: @bp-form-label-margin;
+    color: @bp-form-label-color;
+    font-size: @bp-form-label-font-size;
+}
+.standard-form div.checkbox label,.standard-form div.radio label {
+    color: @bp-form-label-color;
+    font-size: @bp-form-label-font-size;
+    font-weight: @bp-form-label-font-weight;
+    margin: 5px 0 0 0;
+    font-size: @bp-form-label-font-size;
+}
+.standard-form#sidebar-login-form {
+    label {
+        margin-top: 5px;
+    }
+}
+.standard-form#sidebar-login-form input[type=text],.standard-form#sidebar-login-form input[type=password] {
+    padding: 4px;
+    width: 95%;
+}
+.standard-form #basic-details-section input[type=password],.standard-form #blog-details-section input#signup_blog_url {
+    width: 35%;
+}
+.standard-form#send-reply {
+    textarea {
+        width: 97.5%;
+    }
+}
+.standard-form #basic-details-section,.standard-form #blog-details-section,.standard-form #profile-details-section {
+    float: left;
+    width: 48%;
+}
+.standard-form input:focus,.standard-form textarea:focus,.standard-form select:focus {
+    background: #F9F9F9;
+}
+.standard-form#signup_form {
+    div.submit {
+        float: right;
+    }
+}
+.standard-form#signup_form input[type=text],.standard-form#signup_form textarea,.form-allowed-tags,#commentform input[type=text],#commentform textarea {
+    width: 90%;
+}
+
+
+div#signup-avatar img {
+    margin: 0 15px 10px 0;
+}
+
+form#send-invite-form {
+    margin-top: 20px;
+}
+div#invite-list {
+    background: @bp-form-bg;
+    border: @bp-form-border;
+    border-radius: @bp-form-radius;
+    color: @bp-form-color;
+    font: @bp-form-font-family;
+    font-size: @bp-form-font-size;
+    padding: @bp-form-padding;
+    margin: @bp-form-margin;
+
+    height: 400px;
+    overflow: scroll;
+    padding: 5px;
+    width: 160px;
+    float: left;
+}
+
+thead:first-child tr th,thead:first-child tr td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form#send-invite-form {
+    margin-top: 20px;
+    .main-column {
+        margin-left: 190px;
+    }
+}
+#invite-anyone-invite-list {
+    clear: none;
+    margin-left: 30px;
+}
+div#item-header {
+    div#item-header-content {
+        margin-left: 0;
+    }
+}
+form.standard-form {
+    .left-menu {
+        float: left;
+        #invite-list {
+            ul {
+                margin:1%;
+                list-style: none;
+                li {
+                    margin:0 0 0 1%;
+                }
+            }
+        }
+    }
+    .main-column {
+        margin-left: 190px;
+        ul#friend-list {
+            clear:none;
+            h4 {
+                clear:none;
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+//BuddyPress Activity Plus
+#buddypress {
+
+    .bpfb_form_container {
+        padding: inherit;
+    }
+
+    .bpfb_final_link {
+       padding-top: @bp-half-padding;
+       border-top: 1px solid @bp-gray-lighter;
+    }
+
+    .bpfb_actions_container, .bpfb_preview_container {
+      margin-bottom: 0;
+    }
+
+    .bpfb_controls_container input[type="text"] {
+        font-style: normal;
+        width: 54% !important;
+        margin-right: 10px;
+    }
+
+    .bpfb_preview_container  {
+
+        padding: 0;
+
+        .bpfb-wrapper {
+            background: #FFF;
+            padding: 15px;
+            border: 1px solid @bp-brand-complimentary;
+            border-radius: 4px;
+            margin-top: 15px;
+            max-width: 94%;
+        }
+
+        .bpfb_link_preview_title,
+        .bpfb_link_preview_url,
+        .bpfb_link_preview_body,
+        .bpfb_thumbnail_chooser {
+            font-size: 95%;
+            font-weight: normal;
+            line-height: 179%;
+            padding-left: 15px;
+        }
+
+        .bpfb_link_preview_title {
+            font-weight: bold;
+            font-size: 110%;
+        }
+
+        .bpfb_link_preview_body {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #999;
+        }
+
+        .bpfb_thumbnail_chooser_label {
+            font-weight: bold;
+        }
+
+        iframe {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 1px solid @bp-brand-complimentary;
+            border-radius: 4px;
+            padding: 5px;
+            margin-top: 20px;
+            max-width: 550px !important;
+            height: 380px !important;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .activity-inner iframe,
+    .bpfb_images img {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid @bp-brand-complimentary;
+        border-radius: 4px;
+        margin-top: 20px;
+        padding: 5px;
+        max-width: 600px !important;
+    }
+
+
+    .bpfb_toolbar_container, .bpfb_controls_container {
+        padding-top: 20px;
+    }
+
+    .bpfb_final_link {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #F7F5F5;
+        border-radius: 4px;
+        font-size: 90%;
+        overflow: hidden;
+        padding: 15px;
+    }
+    .bpfb_link_contents {
+        float: left;
+        padding: 0 30px;
+        width: 73%;
+        margin-left: 0;
+    }
+
+    .bpfb_actions_container.bpfb-theme-round .bpfb_toolbarItem, .bpfb_actions_container.bpfb-theme-round .bpfb_toolbarItem:visited {
+        background: none repeat scroll 0 0 #F9F9F9 !important;
+        border: medium none !important;
+        color: #919191;
+        font-size: 125% !important;
+        margin-right: 1px !important;
+        margin-top: -8px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+    }
+    .bpfb_actions_container.bpfb-theme-round .button-primary.bpfb_primary_button, .bpfb_actions_container.bpfb-theme-round .qq-upload-button {
+      //.button-variant(@btn-success-color; @btn-success-bg; @btn-success-border) !important;
+    }
+
+
+}

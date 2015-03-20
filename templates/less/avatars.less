@@ -1,0 +1,103 @@
+// Variables
+// @bp-big-avatar-size:
+// @bp-big-avatar-radius:
+// @bp-big-avatar-border:
+// @bp-big-avatar-padding:
+// @bp-big-avatar-background:
+// @bp-medium-avatar-size:
+// @bp-medium-avatar-radius:
+// @bp-medium-avatar-border:
+// @bp-medium-avatar-padding:
+// @bp-medium-avatar-background:
+// @bp-small-avatar-size:
+// @bp-small-avatar-radius:
+// @bp-small-avatar-border:
+// @bp-small-avatar-padding:
+// @bp-small-avatar-background:
+
+.buddypress {
+    .item-list img.avatar {
+       display: block;
+       max-width: 100%;
+       height: @bp-medium-avatar-size;
+       width: @bp-medium-avatar-size;
+       box-shadow: @bp-medium-avatar-shadow;
+   }
+    #item-header-avatar .avatar {
+    	border-radius: @bp-big-avatar-radius;
+    	padding: @bp-big-avatar-padding;
+    	border: @bp-big-avatar-border;
+        box-shadow: @bp-big-avatar-shadow;
+        width: 100%;
+    }
+    .thread-avatar img {
+        width: @bp-medium-avatar-size;
+        height: @bp-medium-avatar-size;
+        margin-right: 10px;
+    }
+}
+
+#bp-user-navigation {
+    .avatar {
+        background: @bp-white;
+        border-radius: @bp-small-avatar-size;
+        height: @bp-small-avatar-size;
+        margin-top: -12px;
+        padding: @bp-medium-avatar-padding;
+        position: relative;
+        top: 4px;
+        width: @bp-small-avatar-size;
+    }
+}
+
+.left-menu {
+	.avatar {
+		width: 150px;
+		height: auto;
+	}
+}
+
+.content {
+    img.avatar {
+        background: @bp-medium-avatar-bg;
+        border: @bp-medium-avatar-border;
+        border-radius: @bp-medium-avatar-radius;
+        padding: @bp-medium-avatar-padding;
+        box-shadow: @bp-small-avatar-shadow;
+    }
+ }
+
+.widget.buddypress {
+	ul.item-list {
+	    img.avatar {
+	        margin-right: 10px;
+	    }
+	}
+	div.item-avatar {
+	    img {
+	        height: @bp-medium-avatar-size;
+	        margin: 1px;
+	        width: @bp-medium-avatar-size;
+	    }
+	    img.avatar {
+	        float: left;
+	        margin: 0 10px 15px 0;
+	    }
+	}
+}
+
+div.ac-reply-avatar {
+    float: left;
+    width: @bp-medium-avatar-size;
+}
+
+.jcrop-holder img {
+	border-radius: 0 !important;
+}
+
+#avatar-crop-pane{
+	border-radius: @bp-big-avatar-radius;
+	img.avatar {
+		border-radius: 0 !important;
+	}
+}

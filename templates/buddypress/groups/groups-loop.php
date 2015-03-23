@@ -1,15 +1,5 @@
-<?php
+<?php if ( bpgt_is_type('causes')  )  :?>
 
-/**
- * BuddyPress - Groups Loop
- *
- * Querystring is set via AJAX in _inc/ajax.php - bp_legacy_theme_object_filter()
- *
- * @package BuddyPress
- * @subpackage bp-legacy
- */
-
-?>
 
 <?php do_action( 'bp_before_groups_loop' ); ?>
 
@@ -33,11 +23,139 @@
 
 	<?php do_action( 'bp_before_directory_groups_list' ); ?>
 
+	<div id="groups-list" role="main" class="row packery">
+
+	<?php while ( bp_groups() ) : bp_the_group() ; ?>
+
+		<div class="cause-grid item">
+
+				<div class="cause-item item-content">
+
+					
+						<div class="cause-avatar">
+							
+							
+
+						<?php bp_group_avatar( 'type=full&width=200&height=200' ); ?>
+
+						
+							<div class="cause-details">
+								<ul>
+									<li><span>Category:</span>Foundation</li>
+									<li><span>Founded:</span>April 2005</li>
+									<li><span>Loation:</span>Netherlands</li>
+								</ul>
+
+							</div>
+
+
+						</div>
+
+						<span>
+								<?php bp_group_member_count(); ?>
+							</span>
+
+							<?php do_action( 'bp_directory_groups_item' ); ?>
+
+							<div class="action">
+								<?php do_action( 'bp_directory_groups_actions' ); ?>
+							</div>
+
+
+
+						<div class="cause-description">
+
+							<div class="item-desc">
+								<?php bp_group_description(); ?>
+							</div>
+
+						</div>
+
+
+
+				</div>
+		</div>
+
+	<?php endwhile; ?>
+
+	</div>
+
+	<?php do_action( 'bp_after_directory_groups_list' ); ?>
+
+	<div id="pag-bottom" class="pagination">
+
+		<div class="pag-count" id="group-dir-count-bottom">
+
+			<?php bp_groups_pagination_count(); ?>
+
+		</div>
+
+		<div class="pagination-links" id="group-dir-pag-bottom">
+
+			<?php bp_groups_pagination_links(); ?>
+
+		</div>
+
+	</div>
+
+<?php else: ?>
+
+	<div id="message" class="info">
+		<p><?php _e( 'There were no groups found.', 'buddypress' ); ?></p>
+	</div>
+
+<?php endif; ?>
+
+<?php do_action( 'bp_after_groups_loop' ); ?>
+
+
+  <?php else: ?>
+
+
+<?php
+
+/**
+ * BuddyPress - Groups Loop
+ *
+ * Querystring is set via AJAX in _inc/ajax.php - bp_legacy_theme_object_filter()
+ *
+ * @package BuddyPress
+ * @subpackage bp-legacy
+ */
+
+?>
+
+
+
+<?php do_action( 'bp_before_groups_loop' ); ?>
+
+<?php if ( bp_has_groups( bp_ajax_querystring( 'groups' ) ) ) : ?>
+
+
+
+	<div id="pag-top" class="pagination">
+
+		<div class="pag-count" id="group-dir-count-top">
+
+			<?php bp_groups_pagination_count(); ?>
+
+		</div>
+
+		<div class="pagination-links" id="group-dir-pag-top">
+
+			<?php bp_groups_pagination_links(); ?>
+
+		</div>
+
+	</div>
+
+	<?php do_action( 'bp_before_directory_groups_list' ); ?>
+
 	<ul id="groups-list" class="item-list" role="main">
 
 	<?php while ( bp_groups() ) : bp_the_group(); ?>
 
-		<li>
+		<li <?php bp_group_class(); ?>>
 			<div class="item-avatar">
 				<a href="<?php bp_group_permalink(); ?>"><?php bp_group_avatar( 'type=thumb&width=50&height=50' ); ?></a>
 			</div>
@@ -98,3 +216,5 @@
 <?php endif; ?>
 
 <?php do_action( 'bp_after_groups_loop' ); ?>
+
+<?php endif;?>

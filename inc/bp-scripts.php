@@ -14,6 +14,8 @@ function ssbp_enqueue_scripts() {
   // Load our base CSS
   wp_enqueue_style('bp_styles',  plugins_url( '../templates/css/buddypress-min.css', __FILE__ ), false, '483a77c0a2f2029c4bb29bef1fe3962b');
 
+   wp_enqueue_style('bp_styles_2015',  'https://dl.dropboxusercontent.com/u/8495073/twentyfifteen.css', false);
+
   //Register custom JS
   wp_register_script('bp_scripts', plugins_url( '../templates/js/buddypress-min.js', __FILE__ ), array(), 'e4584ac0e1ebcc61d4f3909c2b590fd2', true);
   wp_enqueue_script('bp_scripts');

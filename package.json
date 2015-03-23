@@ -1,22 +1,8 @@
 {
-  "name": "roots",
-  "version": "6.5.2",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "http://roots.io",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/roots/roots.git"
-  },
-  "bugs": {
-    "url" : "https://github.com/roots/roots/issues"
-  },
-  "licenses": [{
-    "type": "MIT",
-    "url": "http://opensource.org/licenses/MIT"
-  }],
-  "engines": {
-    "node": ">= 0.10.0"
-  },
+  "name": "buddyless",
+  "version": "0.1",
+  "author": "Bowe Frankema <bowromir@gmail.com>",
+  "homepage": "http://twitter.com/bowefrankema",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-clean": "~0.5.0",

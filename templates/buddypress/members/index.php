@@ -24,9 +24,14 @@
 
 				<?php do_action( 'bp_members_directory_member_types' ); ?>
 
+			</ul>
+		</div><!-- .item-list-tabs -->
+
+		<div class="item-list-tabs" id="subnav" role="navigation">
+			<ul>
 				<?php do_action( 'bp_members_directory_member_sub_types' ); ?>
 
-				<li id="members-order-select" class="last filter pull-right">
+				<li id="members-order-select" class="last filter">
 					<label for="members-order-by"><?php _e( 'Order By:', 'buddypress' ); ?></label>
 					<select id="members-order-by">
 						<option value="active"><?php _e( 'Last Active', 'buddypress' ); ?></option>
@@ -39,10 +44,8 @@
 						<?php do_action( 'bp_members_directory_order_options' ); ?>
 					</select>
 				</li>
-
 			</ul>
-		</div><!-- .item-list-tabs -->
-
+		</div>
 
 		<div id="members-dir-list" class="members dir-list">
 			<?php bp_get_template_part( 'members/members-loop' ); ?>

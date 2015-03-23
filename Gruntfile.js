@@ -25,7 +25,7 @@ module.exports = function(grunt) {
           // To enable, set sourceMap to true and update sourceMapRootpath based on your install
           sourceMap: true,
           sourceMapFilename: 'templates/css/buddypress-min.css.map',
-          sourceMapRootpath: 'wp-content/plugins/sensei-buddypress/'
+          sourceMapRootpath: 'wp-content/plugins/bp-legacy-less/'
         }
       }
     },
@@ -35,8 +35,7 @@ module.exports = function(grunt) {
           'templates/js/buddypress-min.js': [
             'templates/js/bp-custom.js',
             'templates/js/plugins/*.js',
-            '!
-            templates/js/buddypress.js',
+            '!templates/js/buddypress.js',
             '!templates/js/buddypress-min.js'
           ]
         },
